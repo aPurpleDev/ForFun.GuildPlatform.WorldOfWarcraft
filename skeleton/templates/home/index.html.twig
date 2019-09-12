@@ -5,8 +5,8 @@
 {% block body %}
 
 
-<div class="jumbotron" style="background-image: url(https://images8.alphacoders.com/835/835664.jpg); background-size: 100%;">
-    <h1 class = "display-2 text-primary text-right">Welcome to <br><em class = "text-dark">theWOWGuild</em></h1>
+<div class="jumbotron jumbotron-fluid" style="background-image: url(https://images8.alphacoders.com/835/835664.jpg); background-size: 100%;">
+    <h1 class = "display-2 text-white text-right">Welcome to <br><em class = "text-light text-outline-danger"><span class="border border-danger">theWOWGuild</span></em></h1>
 </div>
 
     {% if app.user == false %}
@@ -15,10 +15,10 @@
                 <div class="card-header bg-light">
                     <h2 class="text-center display-6 text-primary">Connect</h2>
                 </div>
-                <div class="card-body text-center bg-transparent">
-                    <h5 class="card-title">Connect to your Avatar</h5>
-                    <p class="card-text">The Fellowship welcomes you</p>
-                    <a href="{{ path('app_login') }}" class="btn btn-light align-center text-dark">LOGIN</a>
+                <d class="card-body text-center bg-transparent">
+                    <h5 class="alert alert-primary">Connect to your Avatar</h5>
+                    <p class="alert alert-warning"><em>The Fellowship welcomes you</em></p>
+                    <a href="{{ path('app_login') }}" class="btn btn-info align-center btn-outline-light text-dark btn-lg">LOGIN</a>
                 </div>
             </div>
         </div>
@@ -29,9 +29,9 @@
                     <h2 class="text-center display-6 text-primary">Register</h2>
                 </div>
                 <div class="card-body text-center bg-transparent">
-                    <h5 class="card-title">Join our Fellowship and take a part</h5>
-                    <p class="card-text">Let's own  Azeroth</p>
-                    <a href="{{ path('app_register') }}" class="btn btn-light align-center text-dark">REGISTER</a>
+                    <h5 class="alert alert-primary">Join our Fellowship and take a part</h5>
+                    <p class="alert alert-warning"><b>Let's own  Azeroth</b></p>
+                    <a href="{{ path('app_register') }}" class="btn btn-lg btn-info btn-outline-light align-center text-dark ">REGISTER</a>
                 </div>
             </div>
         </div>
