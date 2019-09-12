@@ -6,7 +6,7 @@
 
 
 <div class="jumbotron" style="background-image: url(https://images8.alphacoders.com/835/835664.jpg); background-size: 100%;">
-    <h1 class = "display-2 text-primary text-right">Welcome to <em class = "text-dark">theWOWGuild</em></h1>
+    <h1 class = "display-2 text-primary text-right">Welcome to <br><em class = "text-dark">theWOWGuild</em></h1>
 </div>
 
     {% if app.user == false %}
@@ -18,7 +18,7 @@
                 <div class="card-body text-center bg-transparent">
                     <h5 class="card-title">Connect to your Avatar</h5>
                     <p class="card-text">The Fellowship welcomes you</p>
-                    <a href="{{ path('app_login') }}" class="btn btn-primary align-center">LOGIN</a>
+                    <a href="{{ path('app_login') }}" class="btn btn-light align-center text-dark">LOGIN</a>
                 </div>
             </div>
         </div>
@@ -31,7 +31,7 @@
                 <div class="card-body text-center bg-transparent">
                     <h5 class="card-title">Join our Fellowship and take a part</h5>
                     <p class="card-text">Let's own  Azeroth</p>
-                    <a href="{{ path('app_register') }}" class="btn btn-primary align-center">REGISTER</a>
+                    <a href="{{ path('app_register') }}" class="btn btn-light align-center text-dark">REGISTER</a>
                 </div>
             </div>
         </div>
